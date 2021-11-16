@@ -1,23 +1,45 @@
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react'
+import { Form } from './components/Form'
+import { UserList } from './components/UserList';
 import './App.css';
+import { getUsers, createUser, deleteUser } from './services/api'
 
 function App() {
+  const [ users, setUsers ] = useState([])
+
+  const getApiUsers = async () => {
+      const userList = await getUsers()
+      const tmpArray = []
+      for (let key in userList) {
+          tmpArray.push(userList[key])
+      }
+      setUsers(tmpArray)
+  }
+
+  const addUser = async (user) => {
+    const result = await createUser(user)
+    if (result.status === 'ok') {
+      getApiUsers()
+    }
+  }
+
+  const removeUser = async (id) => {
+    const result = await deleteUser(id)
+    if (result.status === 'ok') {
+      getApiUsers()
+    }
+  }
+
+  useEffect(() => {
+     getApiUsers()
+    }, [])
+    
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Form addUser={addUser} />
+        <UserList users={users} removeUser={removeUser}/>
+      </div>
     </div>
   );
 }
