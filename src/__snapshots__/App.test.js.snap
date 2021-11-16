@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Should render App correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="container"
+    >
+      <form>
+        <input
+          class="input"
+          placeholder="Input glover's name"
+          type="text"
+          value=""
+        />
+        <button
+          class="primary-button"
+          type="submit"
+        >
+          ADD
+        </button>
+      </form>
+      <ul
+        class="user-list"
+      >
+        <li
+          class="user-item"
+        >
+          <p
+            class="user-name"
+          >
+            Test User
+          </p>
+          <button
+            class="secondary-button"
+          >
+            Remove
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

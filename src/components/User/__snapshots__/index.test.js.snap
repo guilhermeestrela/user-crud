@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Should render User correctly 1`] = `
+<div>
+  <li
+    class="user-item"
+  >
+    <p
+      class="user-name"
+    >
+      Test User
+    </p>
+    <button
+      class="secondary-button"
+    >
+      Remove
+    </button>
+  </li>
+</div>
+`;

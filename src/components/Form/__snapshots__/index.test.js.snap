@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Should render Form correctly 1`] = `
+<div>
+  <form>
+    <input
+      class="input"
+      placeholder="Input glover's name"
+      type="text"
+      value=""
+    />
+    <button
+      class="primary-button"
+      type="submit"
+    >
+      ADD
+    </button>
+  </form>
+</div>
+`;

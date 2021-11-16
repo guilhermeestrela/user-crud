@@ -3,7 +3,6 @@ import { User } from '../User'
 import './styles.css'
 
 export const UserList = ({users, removeUser}) => {
-
     return (
         <ul className="user-list">
             {users.map((user)=> (

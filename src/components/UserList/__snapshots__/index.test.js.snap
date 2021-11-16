@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserList Should render UserList correctly 1`] = `
+<div>
+  <ul
+    class="user-list"
+  >
+    <li
+      class="user-item"
+    >
+      <p
+        class="user-name"
+      >
+        Test User
+      </p>
+      <button
+        class="secondary-button"
+      >
+        Remove
+      </button>
+    </li>
+  </ul>
+</div>
+`;
