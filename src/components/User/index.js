@@ -7,8 +7,8 @@ export const User = ({ user, removeUser }) => {
     }
     return (
         <li className="user-item">
-            <p>{user.name}</p>
-            <button className="button" onClick={handleOnClick}>Remove</button>
+            <p className="user-name">{user.name}</p>
+            <button className="secondary-button" onClick={handleOnClick}>Remove</button>
         </li>
     )
 }

@@ -10,5 +10,5 @@
   background-color: #fff;
   border-radius: 5px;
   padding: 16px;
-  width: 80%;
+  min-width: 320px;
 }

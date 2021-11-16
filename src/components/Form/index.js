@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './styles.css'
 
 export const Form = ({addUser}) => {
     const [ name, setName ] = useState('')
@@ -10,6 +11,7 @@ export const Form = ({addUser}) => {
         }
         
         addUser(newUser)
+        setName('')
     }
 
     function handleChange(event){
@@ -18,8 +20,8 @@ export const Form = ({addUser}) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Input glover's name" value={name} onChange={handleChange} />
-            <button type="submit">ADD</button>
+            <input type="text" className="input" placeholder="Input glover's name" value={name} onChange={handleChange} />
+            <button type="submit" className="primary-button">ADD</button>
         </form>
     )
 }

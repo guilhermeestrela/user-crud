@@ -1,0 +1,19 @@
+.input {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+.primary-button {
+    padding: 0.5rem;
+    background-color: #0072ff;
+    color: white;
+    font-weight: 700;
+    border: 1px solid #ccc;
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+.primary-button:hover {
+    opacity: 0.75;
+}

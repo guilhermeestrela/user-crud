@@ -1,11 +1,28 @@
 .user-item {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
+    padding-left: 0.5rem;
+    border: 1px solid #e3e3e3;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.button {
-    color: red;
-    padding: 0.5rem;
-    background-color: #f0f0f0;
-    border: 1px solid #000;
+.user-name {
+    margin: 0;
 }
+
+.secondary-button {
+    padding: 0.5rem;
+    background-color: #d9d9d9;
+    color: #f94a4a;
+    font-weight: 700;
+    border: 0;
+    transition: opacity 0.5s;
+    opacity: 1;
+    
+}
+
+.secondary-button:hover {
+    opacity: 0.75;
+}
+
